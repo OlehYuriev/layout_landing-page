@@ -1,0 +1,35 @@
+@use './variables' as v;
+
+@mixin on-tabled {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin constant-padding-inline() {
+  padding-inline: 20px;
+  box-sizing: content-box;
+
+  @include on-tabled {
+    padding-inline: 72px;
+  }
+
+  @include on-desktop {
+    padding-inline: 120px;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
+
+@mixin hover($property, $toValue) {
+  transition: $property v.$animation-duration;
+  &:hover {
+    #{$property}: $toValue;
+  }
+}

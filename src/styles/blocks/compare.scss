@@ -1,0 +1,23 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins.scss' as m;
+
+.compare {
+  margin-top: v.$space-5xl;
+
+  &__products {
+    display: grid;
+    gap: v.$space-xxl;
+    margin-top: v.$space-xxl-plus;
+
+    @include m.on-tabled {
+      gap: v.$space-xxl-plus;
+      grid-template-columns: repeat(1, 392px);
+      justify-content: center;
+    }
+
+    @include m.on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: v.$space-md;
+    }
+  }
+}

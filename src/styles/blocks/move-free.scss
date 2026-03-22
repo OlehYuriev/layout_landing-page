@@ -1,0 +1,24 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins.scss' as m;
+
+.move-free {
+  margin-top: v.$space-xxxl;
+  flex-direction: column;
+  gap: v.$space-lg;
+  display: grid;
+
+  @include m.on-tabled {
+    grid-template-columns: repeat(2, 1fr);
+    gap: v.$space-md;
+    margin-top: v.$space-6xl;
+  }
+
+  @include m.on-desktop {
+    grid-template-columns: 5fr 6fr 0.6fr;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins.scss' as m;
+
+.product {
+  &__photo {
+    width: 100%;
+  }
+  &__title {
+    margin-block: v.$fs-lg v.$fs-xxs;
+  }
+  &__price {
+    margin-top: v.$fs-sm;
+  }
+}

@@ -160,7 +160,9 @@
         id="move-free"
         class="move-free"
       >
-        <h2 class="section-title section-title--text-left">Move Free</h2>
+        <h2 class="move-free__title section-title section-title--text-left">
+          Move Free
+        </h2>
         <p class="move-free__text">
           Shift your ride, not gears. Find the fastest way to move in the city
           as the bike adapts intuitively to power the speed you need.
@@ -173,7 +175,7 @@
       >
         <h2 class="section-title">Compare Bikes</h2>
         <div class="compare__products">
-          <article class="product">
+          <article class="product compare__product">
             <img
               src="./src/images/product.png"
               alt="Sporty 4"
@@ -187,7 +189,7 @@
             <p class="product__price text-strong">$ 2 590</p>
           </article>
 
-          <article class="product">
+          <article class="product compare__product">
             <img
               src="./src/images/product.png"
               alt="Ride in town ST"
@@ -201,7 +203,7 @@
             <p class="product__price text-strong">$ 2 590</p>
           </article>
 
-          <article class="product">
+          <article class="product compare__product">
             <img
               src="./src/images/product.png"
               alt="Agile ride 3"
@@ -216,7 +218,187 @@
           </article>
         </div>
       </section>
-      <section id="details">sdadsas</section>
+
+      <section
+        id="details"
+        class="details"
+      >
+        <h2 class="details__title section-title">The Details</h2>
+        <div class="details__cards">
+          <article class="card details__card">
+            <div class="card__photos">
+              <a
+                href="#link"
+                class="card__link card__link--wide"
+              >
+                <img
+                  src="./src/images/d1.png"
+                  alt="Auto Unlock"
+                  class="card__photo"
+                />
+              </a>
+              <a
+                href="#link"
+                class="card__link card__link--square"
+              >
+                <img
+                  src="./src/images/d2.png"
+                  alt="Auto Unlock"
+                  class="card__photo"
+                />
+              </a>
+            </div>
+
+            <h3 class="card__title text-strong">Auto Unlock</h3>
+
+            <p class="card__text">
+              The app senses when you're nearby to unlock automatically. GPS
+              tracking so you know where your bike is and can track it anytime.
+            </p>
+          </article>
+
+          <article class="card details__card">
+            <div class="card__photos">
+              <a
+                href="#link"
+                class="card__link card__link--wide"
+              >
+                <img
+                  src="./src/images/d3.png"
+                  alt="Range & Integrated lights"
+                  class="card__photo"
+                />
+              </a>
+              <a
+                href="#link"
+                class="card__link card__link--square"
+              >
+                <img
+                  src="./src/images/d4.png"
+                  alt="Range & Integrated lights"
+                  class="card__photo"
+                />
+              </a>
+            </div>
+
+            <h3 class="card__title text-strong">Range & Integrated lights</h3>
+
+            <p class="card__text">
+              The removable battery has up to 70km battery autonomy and weighs
+              only 2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+
+          <article class="card details__card">
+            <div class="card__photos">
+              <a
+                href="#link"
+                class="card__link card__link--square"
+              >
+                <img
+                  src="./src/images/d5.png"
+                  alt="Range & Integrated lights"
+                  class="card__photo"
+                />
+              </a>
+              <a
+                href="#link"
+                class="card__link card__link--wide"
+              >
+                <img
+                  src="./src/images/d6.png"
+                  alt="Hydraulic disc brakes & Lightweight"
+                  class="card__photo"
+                />
+              </a>
+            </div>
+
+            <h3 class="card__title text-strong">
+              Hydraulic disc brakes & Lightweight
+            </h3>
+
+            <p class="card__text">
+              Brakes with total stopping power the second you make contact. The
+              removable battery has up to 70km battery autonomy and weighs only
+              2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+        </div>
+        <div class="details__bottom">
+          <button
+            type="button"
+            class="button details__button"
+          >
+            Explore
+          </button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="section-title">Contact us</h2>
+        <div class="contacts__content">
+          <form class="form contacts__form">
+            <input
+              name="name"
+              type="text"
+              class="field"
+              placeholder="Name"
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="field"
+              placeholder="Email"
+            />
+
+            <textarea
+              placeholder="Message"
+              name="message"
+              class="field field--textarea field--border-radius-md"
+            ></textarea>
+            <button
+              type="submit"
+              class="button form__button"
+            >
+              Send
+            </button>
+          </form>
+
+          <address class="address contacts__info">
+            <div class="address__item">
+              <span class="address__label">Phone</span>
+              <a
+                href="tel:+123456789"
+                class="address__value address__value--link"
+              >
+                +1 (234) 567-89
+              </a>
+            </div>
+            <div class="address__item">
+              <span class="address__label">Email</span>
+              <a
+                href="mailto:hello@miami.com"
+                class="address__value address__value--link"
+              >
+                hello@miami.com
+              </a>
+            </div>
+            <div class="address__item">
+              <span class="address__label">Address</span>
+              <p class="address__value">
+                400 first ave.
+                <br />
+                suite 700 Minneapolis,
+                <br />
+                MN 55401
+              </p>
+            </div>
+          </address>
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -33,3 +33,21 @@
     #{$property}: $toValue;
   }
 }
+
+@mixin page-grid {
+  --column: 2;
+
+  display: grid;
+  column-gap: v.$space-sm;
+  grid-template-columns: repeat(var(--column), 1fr);
+
+  @include on-tabled {
+    --column: 6;
+
+    column-gap: v.$space-md;
+  }
+
+  @include on-desktop {
+    --column: 12;
+  }
+}

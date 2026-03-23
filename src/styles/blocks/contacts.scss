@@ -1,26 +1,29 @@
 @use '../utils/variables' as v;
 @use '../utils/mixins.scss' as m;
 
-.move-free {
-  @include m.page-grid;
-
-  margin-top: v.$space-xxxl;
-  flex-direction: column;
-  row-gap: v.$space-lg;
+.contacts {
+  margin-top: v.$space-4xl;
 
   @include m.on-tabled {
     margin-top: v.$space-6xl;
   }
 
-  @include m.on-tabled {
-    margin-top: v.$space-6xl;
+  @include m.on-desktop {
+    margin-top: 180px;
   }
 
-  &__title {
+  &__content {
+    margin-top: v.$space-xxl-plus;
+    row-gap: v.$space-xxl-plus;
+
+    @include m.page-grid;
+  }
+
+  &__form {
     grid-column: 1 / -1;
 
     @include m.on-tabled {
-      grid-column: 1 / 4;
+      grid-column: span 3;
     }
 
     @include m.on-desktop {
@@ -28,17 +31,15 @@
     }
   }
 
-  &__text {
-    font-weight: 500;
-    font-size: 23px;
+  &__info {
     grid-column: 1 / -1;
 
     @include m.on-tabled {
-      grid-column: 4 / 7;
+      grid-column: span 2;
     }
 
     @include m.on-desktop {
-      grid-column: 6 / 12;
+      grid-column: 8 / 13;
     }
   }
 }

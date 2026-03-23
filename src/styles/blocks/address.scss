@@ -1,0 +1,27 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins.scss' as m;
+
+.address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-md;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-xxs;
+  }
+  &__label {
+    font-size: 14px;
+  }
+  &__value {
+    &--link {
+      transform-origin: top left;
+
+      @include m.hover(transform, scale(1.1));
+    }
+
+    font-weight: 500;
+  }
+}

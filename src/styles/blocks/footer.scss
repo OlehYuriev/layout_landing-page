@@ -1,21 +1,23 @@
-@use '../utils/variables' as v;
-@use '../utils/mixins.scss' as m;
+@use "../utils/variables" as v;
+@use "../utils/mixins.scss" as m;
 
 .footer {
   margin-top: v.$space-6xl;
 
+  background-image: url("../images/footer-photo.png");
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 200px;
+
   @include m.on-tabled {
-    margin-top: 102px;
+    height: 480px;
   }
 
   @include m.on-desktop {
     margin-top: 164px;
-  }
-
-  &__photo {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    background-size: cover;
+    height: 100vh;
   }
 }

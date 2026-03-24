@@ -76,24 +76,27 @@
       class="menu page__menu"
       id="menu"
     >
-      <div class="container">
-        <div class="top-bar">
-          <a
-            href="#"
-            class="logo"
-          >
-            <img
-              src="./src/images/logo-black.svg"
-              alt="MyBike logo"
-              class="logo__img"
-            />
-          </a>
-          <a
-            href="#"
-            class="icon icon--close"
-          ></a>
+      <div class="menu__top">
+        <div class="container">
+          <div class="top-bar">
+            <a
+              href="#"
+              class="logo"
+            >
+              <img
+                src="./src/images/logo-black.svg"
+                alt="MyBike logo"
+                class="logo__img"
+              />
+            </a>
+            <a
+              href="#"
+              class="icon icon--close"
+            ></a>
+          </div>
         </div>
-
+      </div>
+      <div class="container">
         <div class="menu__bottom">
           <nav class="nav menu__nav">
             <ul class="nav__list">
@@ -146,7 +149,7 @@
             +1 234 5555-55-55
           </a>
           <a
-            href="tel:+1 234 5555-55-55"
+            href="#contacts"
             class="menu__book-ride"
           >
             Book a test ride
@@ -176,11 +179,16 @@
         <h2 class="section-title">Compare Bikes</h2>
         <div class="compare__products">
           <article class="product compare__product">
-            <img
-              src="./src/images/product.png"
-              alt="Sporty 4"
-              class="product__photo"
-            />
+            <a
+              href="#"
+              class="product__link"
+            >
+              <img
+                src="./src/images/product.png"
+                alt="Sporty 4"
+                class="product__photo"
+              />
+            </a>
             <h3 class="product__title text-strong">Sporty 4</h3>
             <p class="product__text">
               The iconic frame brought to a new performance height as a sporty,
@@ -190,11 +198,16 @@
           </article>
 
           <article class="product compare__product">
-            <img
-              src="./src/images/product.png"
-              alt="Ride in town ST"
-              class="product__photo"
-            />
+            <a
+              href="#"
+              class="product__link"
+            >
+              <img
+                src="./src/images/product.png"
+                alt="Sporty 4"
+                class="product__photo"
+              />
+            </a>
             <h3 class="product__title text-strong">Ride in town ST</h3>
             <p class="product__text">
               An open frame for an upright riding position as the most
@@ -204,11 +217,16 @@
           </article>
 
           <article class="product compare__product">
-            <img
-              src="./src/images/product.png"
-              alt="Agile ride 3"
-              class="product__photo"
-            />
+            <a
+              href="#"
+              class="product__link"
+            >
+              <img
+                src="./src/images/product.png"
+                alt="Sporty 4"
+                class="product__photo"
+              />
+            </a>
             <h3 class="product__title text-strong">Agile ride 3</h3>
             <p class="product__text">
               The lightweight frame that has earned its street tread as a sleek,
@@ -228,7 +246,7 @@
           <article class="card details__card">
             <div class="card__photos">
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--wide"
               >
                 <img
@@ -238,7 +256,7 @@
                 />
               </a>
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--square"
               >
                 <img
@@ -260,7 +278,7 @@
           <article class="card details__card">
             <div class="card__photos">
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--wide"
               >
                 <img
@@ -270,7 +288,7 @@
                 />
               </a>
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--square"
               >
                 <img
@@ -293,7 +311,7 @@
           <article class="card details__card">
             <div class="card__photos">
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--square"
               >
                 <img
@@ -303,7 +321,7 @@
                 />
               </a>
               <a
-                href="#link"
+                href="#"
                 class="card__link card__link--wide"
               >
                 <img
@@ -342,22 +360,28 @@
       >
         <h2 class="section-title">Contact us</h2>
         <div class="contacts__content">
-          <form class="form contacts__form">
+          <form
+            onsubmit="this.reset(); return false;"
+            class="form contacts__form"
+          >
             <input
               name="name"
               type="text"
               class="field"
               placeholder="Name"
+              required
             />
 
             <input
               name="email"
               type="email"
               class="field"
-              placeholder="Email"
+              placeholder="example@gmail.com"
+              required
             />
 
             <textarea
+              required
               placeholder="Message"
               name="message"
               class="field field--textarea field--border-radius-md"
@@ -391,25 +415,24 @@
             </div>
             <div class="address__item">
               <span class="address__label">Address</span>
-              <p class="address__value">
+              <a
+                href="https://www.google.com/maps/place/400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+%D0%A1%D0%A8%D0%90/@44.9501968,-93.448097,11z/data=!4m6!3m5!1s0x52b3328fdf233887:0x3348e5113ed2472d!8m2!3d44.9813258!4d-93.2731311!16s%2Fg%2F11nyn_tfyt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="address__value"
+              >
                 400 first ave.
                 <br />
                 suite 700 Minneapolis,
                 <br />
                 MN 55401
-              </p>
+              </a>
             </div>
           </address>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <img
-        src="./src/images/footer-photo.png"
-        alt="footer-photo"
-        class="footer__photo"
-      />
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@use '../utils/variables' as v;
+@use "../utils/variables" as v;
 
 .page {
   font-family: v.$font-family, v.$second-family, sans-serif;
@@ -7,6 +7,10 @@
   line-height: 1.4;
   color: v.$color-secondary;
   scroll-behavior: smooth;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 
   &__body {
     background-color: v.$color-main;

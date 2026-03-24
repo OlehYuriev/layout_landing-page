@@ -1,0 +1,21 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins.scss' as m;
+
+.footer {
+  margin-top: v.$space-6xl;
+
+  @include m.on-tabled {
+    margin-top: 102px;
+  }
+
+  @include m.on-desktop {
+    margin-top: 164px;
+  }
+
+  &__photo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

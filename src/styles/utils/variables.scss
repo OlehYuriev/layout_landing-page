@@ -1,8 +1,7 @@
 $font-family: Poppins;
 $second-family: Roboto;
-$third-family: Cinzel;
-$font3: Ubuntu;
-$font4: Inter;
+
+// fz
 $fs-xxs: 8px;
 $fs-xs: 12px;
 $fs-sm: 16px;
@@ -11,10 +10,14 @@ $fs-lg: 32px;
 $fs-xl: 48px;
 $fs-xxl: 64px;
 $fs-xxxl: 80px;
+
+// color
 $color-main: #1d1d1d;
 $color-secondary: #fff;
 $color-tertiary: #c2c2c2;
 $color-light: #f8f8fa;
+
+// space
 $space-xxs: 8px;
 $space-xs: 16px;
 $space-sm: 20px;
@@ -28,4 +31,6 @@ $space-4xl: 80px;
 $space-5xl: 92px;
 $space-6xl: 120px;
 $space-7xl: 132px;
+
+// transition-duration
 $animation-duration: 0.5s;

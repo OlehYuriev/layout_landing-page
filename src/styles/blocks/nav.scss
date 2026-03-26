@@ -22,7 +22,6 @@
     letter-spacing: 0.09em;
     position: relative;
 
-    @include m.hover(color, #fff);
     &::after {
       content: '';
       position: absolute;
